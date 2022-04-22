@@ -4,10 +4,8 @@ This is our mini-project for SC1015 Introduction to Data Science and Aritificial
 ## Problem Definition
 - Can fake news be detected based on specific features that identify them as fake?
 - Which model should we use to detect this?
-## Models Used
-1. Passive Aggressive Classifier
-2. Bayes Classifier
-3. K Nearest Neighbors Algorithm
+## Model Used
+K Nearest Neighbors Algorithm
 ## Conclusion
 - Assumptions were made for how certain factors corelated with news being fake
 - Exploratory data analysis was used to confirm these assumptions
