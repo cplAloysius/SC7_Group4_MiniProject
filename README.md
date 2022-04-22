@@ -20,6 +20,13 @@ Can fake news be detected based on specific features that identify them as fake?
 - For Machine Learning
   - Tokenise "title" and "text" column
   - Removed punctuations, non ascii characters, stop-words (common English words that are irrelevant for Machine Learning)
+## Exploratory Data Analysis
+- Participants_count has the strongest negative correlation with spam_score, suggests a linear relationship between participants/engagement and news not being fake
+- "informationclearinghouse.info" is a potential fake news site
+- Buzz words or "click-baity" words such as "World-War 3" or "Yuge" used to lure people into clicking on fake news
+- Possible relationship between use of punctuations in title and spam_score
+- "ijr.com" is another potential fake news site
+- Engagement and participation for news with high spam_score are lower than those with low and medium spam_score, with the exception of number of comments which remained consistent throughout
 ## Model Used
 K Nearest Neighbors Algorithm
 ## Conclusion
