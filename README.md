@@ -20,6 +20,7 @@ Can fake news be detected based on specific features that identify them as fake?
 - For Machine Learning
   - Tokenise "title" and "text" column
   - Removed punctuations, non ascii characters, stop-words (common English words that are irrelevant for Machine Learning)
+  - Split into N-grams of 1 to 3 words
 ## Exploratory Data Analysis
 - Participants_count has the strongest negative correlation with spam_score, suggests a linear relationship between participants/engagement and news not being fake
 - "informationclearinghouse.info" is a potential fake news site
@@ -27,10 +28,23 @@ Can fake news be detected based on specific features that identify them as fake?
 - Possible relationship between use of punctuations in title and spam_score
 - "ijr.com" is another potential fake news site
 - Engagement and participation for news with high spam_score are lower than those with low and medium spam_score, with the exception of number of comments which remained consistent throughout
-## Model Used
-K Nearest Neighbors Algorithm
+## Machine Learning
+- Variables:
+  - TF-IDF Matrix: Term Frequency and Inverse Document Frequency Matrix to measure importance of words in "title" and "text"
+  - Categorical variables (author, site URL, country)
+- Model used: [K-Nearest Neighbours](https://en.wikipedia.org/wiki/K-nearest_neighbors_algorithm)
+- K-Value of 11 had the least error rate
+- Test set had good precision across all spam_scores
+  - high: 0.67
+  - medium: 1.00
+  - low: 0.80
+- Recall for high and medium spam_score lower (0.16 and 0.08) compared to low spam_score (0.98)
+  - medium and high spam_scores predicted as low instead
 ## Conclusion
 - Assumptions were made for how certain factors corelated with news being fake
 - Exploratory data analysis was used to confirm these assumptions
 - Features that contribute to a news being fake were identified
-- KNN classifier supports these claims
+  - Text used in titles
+  - Author
+  - Engagement/participants
+- KNN classifier predicted based on these variables and supports claims
