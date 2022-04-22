@@ -1,9 +1,6 @@
 # Fake News Detection
 ## About
-This is our mini-project for SC1015 Introduction to Data Science and Aritificial Intelligence. Our project is on fake news detection where we attempt to identify features of fake news that differ from factual news. The following is the order in which you should view the source code.
-1. [Data Preparation and Cleaning](https://github.com/cplAloysius/SC7_Group4_MiniProject/blob/main/Fake%20News%20Detection.ipynb)
-2. Exploratory Data Analysis
-3. Machine Learning
+This is our mini-project for SC1015 Introduction to Data Science and Aritificial Intelligence. Our project is on fake news detection where we attempt to identify features of fake news that differ from factual news. [Click here to view our project source code](https://github.com/cplAloysius/SC7_Group4_MiniProject/blob/main/DataPrep%2BEDA%2BML.ipynb)
 ## Problem Definition
 - Can fake news be detected based on specific features that identify them as fake?
 - Which model should we use to detect this?
