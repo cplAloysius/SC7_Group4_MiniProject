@@ -36,6 +36,7 @@ Can fake news be detected based on specific features that identify them as fake?
 - Model used: [K-Nearest Neighbours](https://en.wikipedia.org/wiki/K-nearest_neighbors_algorithm)
   - Chosen as it does not make assumptions about the distribution of spam_scores
   - It makes predictions based on similarity of test data points to train data points
+  - EDA suggests that articles with similar spam scores has similar attributes as well - such as certain authors and site URLs having high spam scores.
 - K-Value of 12 was chosen as it has the least error rate
 - Precision: The ratio of no. of correctly predicted in a class / total no. of correctly predicted
 - Test set had good precision across all spam_scores
