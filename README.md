@@ -12,7 +12,7 @@ Can fake news be detected based on specific features that identify them as fake?
   - Removed all non-English entries
   - Removed irrelevant columns
   - Removed remaining rows with missing values
-  - Removed entries where spam_score = 0
+  - Removed entries where spam_score = 0 as it was skewing the distribution
   - Converted spam_score from numerical to categorical
   - Tokenise "title" column to analyse words used in title
   - Removed punctuations, non ascii characters, stop-words (common English words that are irrelevant for analysis)
