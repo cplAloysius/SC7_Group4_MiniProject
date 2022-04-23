@@ -32,15 +32,18 @@ Can fake news be detected based on specific features that identify them as fake?
 - Variables:
   - TF-IDF Matrix: Term Frequency and Inverse Document Frequency Matrix to measure importance of words in "title" and "text"
   - Categorical variables (author, site URL, country)
+- Train-test split: 70:30 ratio
 - Model used: [K-Nearest Neighbours](https://en.wikipedia.org/wiki/K-nearest_neighbors_algorithm)
   - Chosen as it does not make assumptions about the distribution of spam_scores
   - It makes predictions based on similarity of test data points to train data points
-- K-Value with the least error rate chosen
+- K-Value of 12 was chosen as it has the least error rate
+- Precision: The ratio of no. of correctly predicted in a class / total no. of correctly predicted
 - Test set had good precision across all spam_scores
-  - high: 0.45
+  - high: 0.80
   - medium: 1.00
-  - low: 0.79
-- Recall for high and medium spam_score lower (0.17 and 0.10) compared to low spam_score (0.96)
+  - low: 0.77
+- Recall: ratio of correct positive predictions for a class / total no. of observations in that class
+- Recall for high and medium spam_score lower (0.13 and 0.08) compared to low spam_score (0.99)
   - medium and high spam_scores predicted as low instead
 ## Conclusion
 - Assumptions were made for how certain factors corelated with news being fake
