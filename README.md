@@ -7,6 +7,7 @@ This is our mini-project for SC1015 Introduction to Data Science and Aritificial
 Can fake news be detected based on specific features that identify them as fake?
 ## The Dataset Used
 [Gettting Real about Fake News](https://www.kaggle.com/datasets/mrisdal/fake-news)
+- Various information about different news threads scrapped from 244 websites
 - spam_score column displays a number between 0 to 1 showing the likelihood of the news thread being fake
 ## Data Cleaning and Preparation
 - For Exploratory Data Analysis
