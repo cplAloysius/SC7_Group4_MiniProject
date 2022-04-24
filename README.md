@@ -26,7 +26,7 @@ Can fake news be detected based on specific features that identify them as fake?
 ## Exploratory Data Analysis
 - Participants_count has the strongest negative correlation with spam_score, suggests a linear relationship between participants/engagement and news not being fake
 - "informationclearinghouse.info" is a potential fake news site
-- Buzz words or "click-baity" words such as "World War 3" or "Yuge" used to lure people into clicking on fake news
+- Buzz words or "click-baity" words in title such as "World War 3" or "Yuge" used to lure people into clicking on fake news
 - Possible relationship between use of punctuations in title and spam_score
 - "ijr.com" is another potential fake news site
 - Engagement and participation for news with high spam_score are lower than those with low and medium spam_score, with the exception of number of comments which remained consistent throughout
@@ -38,7 +38,7 @@ Can fake news be detected based on specific features that identify them as fake?
 - Model used: [K-Nearest Neighbours](https://en.wikipedia.org/wiki/K-nearest_neighbors_algorithm)
   - Chosen as it does not make assumptions about the distribution of spam_scores
   - It makes predictions based on similarity of test data points to train data points
-  - Our EDA suggests that articles with similar spam_score have similar attributes - eg. certain authors and site URLs having high spam scores.
+  - Our EDA suggests that articles with similar spam_score have similar attributes - eg. certain authors and site URLs having high spam scores
 - K-Value of 12 was chosen as it has the least error rate
 - Precision: The ratio of no. of correctly predicted in a class / total no. of correctly predicted
   - Test set had good precision across all spam_scores
